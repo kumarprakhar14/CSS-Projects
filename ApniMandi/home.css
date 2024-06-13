@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(139, 157, 139, 0.649);
+    height: 60px;
+    width: 100%;
+    font-size: 1.1vw;
+    
+    
+}
+
+.left-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.icon img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vmax;
+    width: 6vmax;
+}
+
+.home, .services, .about, .contact{
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit
+}
+
+
+.right-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto; /* Pushes the right-content to the right edge */
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.login-btn,
+.register-btn {
+    font-size: 1.1vmax;
+    margin-left: 10px; /* Adds some space between Sign In and Sign Up buttons */
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(min-width: 600px){
+    #menu{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .home, .services, .about, .contact{
+        display: none;
+    }
+    #menu{
+        font-size: 2.5vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .icon img{
+        width: 6vmax;
+        height: 7vmax;
+    }
+    .i opt{
+        display: inline-block;
+    }
+}
